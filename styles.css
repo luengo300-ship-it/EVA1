@@ -1,0 +1,78 @@
+:root {
+  --bs-primary: #ffcb05;
+  --bs-secondary: #3b4cca;
+  --bs-body-bg: #f6f7fb;
+  --bs-body-color: #1f2937;
+}
+
+body {
+  background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 100%);
+  color: var(--bs-body-color);
+}
+
+.bg-pokemon {
+  background-color: #3b4cca !important;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffcb05 !important;
+}
+
+.btn-pokemon {
+  background-color: #ffcb05;
+  color: #3b4cca;
+  border: 2px solid #3b4cca;
+}
+
+.btn-pokemon:hover {
+  background-color: #f2b904;
+  color: #1f2937;
+}
+
+.section-title {
+  color: #3b4cca;
+}
+
+footer {
+  background: #3b4cca;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffcb05;
+  text-decoration: underline;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  color: #1f2937;
+}
+
+.card-text,
+.text-secondary {
+  color: #4b5563;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .carousel-caption {
+    display: none;
+  }
+}
