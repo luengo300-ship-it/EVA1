@@ -71,6 +71,100 @@ footer {
   padding: 1rem;
 }
 
+.navbar-brand {
+  max-height: 80px;
+  padding: 0.35rem 0.75rem;
+}
+
+.logo-brand {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.modern-menu {
+  background: linear-gradient(135deg, #16237a 0%, #2d3bb0 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.modern-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.55rem 1rem;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.modern-nav .nav-link:hover,
+.modern-nav .nav-link.active,
+.modern-nav .show > .nav-link {
+  color: #ffcb05;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modern-menu .dropdown-menu {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.modern-menu .dropdown-item {
+  color: #ffffff;
+  transition: background 0.2s ease;
+}
+
+.modern-menu .dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffcb05;
+}
+
+.modern-menu-actions .btn {
+  min-width: 100px;
+}
+
+.neon-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75), 0 0 12px rgba(255, 0, 0, 0.45);
+}
+
+.neon-card {
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4), 0 0 22px rgba(255, 0, 0, 0.25);
+}
+
+.contact-section, .footer {
+  text-align: center;
+}
+
+.social-icon {
+  margin-right: 0.35rem;
+}
+
+.social-list .list-inline-item {
+  margin-right: 1rem;
+}
+
+.colecciones-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+.colecciones-grid > .coleccion-item {
+  padding: 0 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .colecciones-grid > .coleccion-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .colecciones-grid > .coleccion-item {
+    width: 25%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .carousel-caption {
     display: none;

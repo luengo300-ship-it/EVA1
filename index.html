@@ -9,32 +9,34 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-pokemon shadow-sm">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-pokemon shadow-sm modern-menu">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#inicio">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Logo PokéCartas" class="me-2 rounded-circle" style="width:40px;height:40px;object-fit:cover;">
-          <span class="fs-5 fw-bold">PokéCartas</span>
+        <a class="navbar-brand d-flex align-items-center justify-content-center mx-auto" href="#inicio">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Logo PokéCartas" class="me-2 rounded-circle logo-brand">
+          <span class="fs-4 fw-bold">PokéCartas</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#inicio">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#expansiones">Expansiones</a></li>
-            <li class="nav-item"><a class="nav-link" href="#colecciones">Colecciones</a></li>
-            <li class="nav-item"><a class="nav-link" href="#favoritas">Favoritas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-            <li class="nav-item ms-3">
-              <a class="nav-link d-flex align-items-center" href="#carrito" aria-label="Carrito de compras">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffcb05" class="bi bi-cart3" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zM3.14 6l1.25 6.25a.5.5 0 0 0 .49.375h7.72a.5.5 0 0 0 .49-.375L13.89 6H3.14z"/>
-                  <path d="M5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                </svg>
-                <span class="ms-2">0</span>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav align-items-center modern-nav">
+            <li class="nav-item dropdown me-lg-3">
+              <a class="nav-link dropdown-toggle" href="#" id="tiendaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tienda
               </a>
+              <ul class="dropdown-menu" aria-labelledby="tiendaDropdown">
+                <li><a class="dropdown-item" href="#colecciones">Colecciones</a></li>
+                <li><a class="dropdown-item" href="#cartas-sueltas">Cartas Sueltas</a></li>
+                <li><a class="dropdown-item" href="#accesorios">Accesorios</a></li>
+              </ul>
             </li>
+            <li class="nav-item me-lg-3"><a class="nav-link" href="#favoritas">Favoritas</a></li>
+            <li class="nav-item me-lg-3"><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
+          <div class="d-flex align-items-center modern-menu-actions mt-3 mt-lg-0 ms-lg-4">
+            <a class="btn btn-outline-light btn-sm rounded-pill me-2" href="#carrito" aria-label="Carrito de compras">Carrito</a>
+            <a class="btn btn-pokemon btn-sm rounded-pill" href="#contacto">Contáctanos</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -98,94 +100,86 @@
 
     <section id="colecciones" class="container py-5 bg-light">
       <div class="mb-4 text-center">
-        <h2 class="section-title h3 fw-bold">Colecciones destacadas</h2>
+        <h2 class="section-title h3 fw-bold neon-text">Colecciones destacadas</h2>
         <p class="text-secondary">Nueve expansiones seleccionadas para coleccionistas y fans.</p>
       </div>
-      <div class="row g-4">
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" class="card-img-top" alt="Expansión Brillante Destello">
-            <div class="card-body">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 colecciones-grid">
+        <article class="col coleccion-item">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" class="card-img-top img-fluid" alt="Expansión Brillante Destello">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Brillante Destello</h3>
-              <p class="card-text text-secondary">Una colección con cartas holográficas y brillo especial.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" class="card-img-top" alt="Expansión Furia de Dragones">
-            <div class="card-body">
+        <article class="col">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" class="card-img-top img-fluid" alt="Expansión Furia de Dragones">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Furia de Dragones</h3>
-              <p class="card-text text-secondary">Cartas de dragones con ataques potentes y diseño feroz.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png" class="card-img-top" alt="Expansión Rugido Primitivo">
-            <div class="card-body">
+        <article class="col">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png" class="card-img-top img-fluid" alt="Expansión Rugido Primitivo">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Rugido Primitivo</h3>
-              <p class="card-text text-secondary">Arte salvaje y cartas con estilo clásico.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png" class="card-img-top" alt="Expansión Luz Estelar">
-            <div class="card-body">
+        <article class="col">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png" class="card-img-top img-fluid" alt="Expansión Luz Estelar">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Luz Estelar</h3>
-              <p class="card-text text-secondary">Cartas legendarias con brillo y energía cósmica.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png" class="card-img-top" alt="Expansión Batalla Suprema">
-            <div class="card-body">
+        <article class="col">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png" class="card-img-top img-fluid" alt="Expansión Batalla Suprema">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Batalla Suprema</h3>
-              <p class="card-text text-secondary">Ideal para tus duelos más intensos.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png" class="card-img-top" alt="Expansión Trueno Masivo">
-            <div class="card-body">
+        <article class="col">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png" class="card-img-top img-fluid" alt="Expansión Trueno Masivo">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Trueno Masivo</h3>
-              <p class="card-text text-secondary">Cartas eléctricas con ataques impactantes.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/888.png" class="card-img-top" alt="Expansión Guardia Legendaria">
-            <div class="card-body">
+        <article class="col">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/888.png" class="card-img-top img-fluid" alt="Expansión Guardia Legendaria">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Guardia Legendaria</h3>
-              <p class="card-text text-secondary">Una colección épica con guardianes legendarios.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png" class="card-img-top" alt="Expansión Tesoro Nocturno">
-            <div class="card-body">
+        <article class="col">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png" class="card-img-top img-fluid" alt="Expansión Tesoro Nocturno">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Tesoro Nocturno</h3>
-              <p class="card-text text-secondary">Cartas oscuras con arte misterioso y elegante.</p>
             </div>
           </div>
         </article>
-        <article class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/791.png" class="card-img-top" alt="Expansión Amanecer Radiante">
-            <div class="card-body">
+        <article class="col coleccion-item">
+          <div class="card h-100 shadow-sm neon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/791.png" class="card-img-top img-fluid" alt="Expansión Amanecer Radiante">
+            <div class="card-body text-center">
               <h3 class="card-title h5">Amanecer Radiante</h3>
-              <p class="card-text text-secondary">Cartas brillantes para empezar tu día con energía máxima.</p>
             </div>
           </div>
         </article>
       </div>
     </section>
 
+    <div id="cartas-sueltas"></div>
     <section id="favoritas" class="container py-5">
       <div class="mb-4 text-center">
         <h2 class="section-title h3 fw-bold">Cartas favoritas</h2>
@@ -330,14 +324,15 @@
       </div>
     </section>
 
-    <section id="contacto" class="container py-5">
-      <div class="mb-4 text-center">
-        <h2 class="section-title h3 fw-bold">Contacto</h2>
+    <section id="accesorios"></section>
+    <section id="contacto" class="container py-5 contact-section text-center">
+      <div class="mb-4">
+        <h2 class="section-title h3 fw-bold neon-text">Contacto</h2>
         <p class="text-secondary">Envía tu consulta y nuestro equipo te responderá en breve.</p>
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
-          <form class="p-4 rounded-4 shadow-sm bg-white">
+          <form class="p-4 rounded-4 shadow-sm bg-white neon-card">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
@@ -361,23 +356,23 @@
     </section>
   </main>
 
-  <footer class="footer bg-pokemon text-white py-5">
+  <footer class="footer bg-pokemon text-white py-5 text-center">
     <div class="container">
-      <div class="row gy-4">
+      <div class="row gy-4 justify-content-center">
         <div class="col-12 col-md-4">
-          <h3 class="h5">PokéCartas</h3>
+          <h3 class="h5 neon-text">PokéCartas</h3>
           <p class="mb-0">Tu tienda online de cartas Pokémon para coleccionistas y jugadores.</p>
         </div>
         <div class="col-12 col-md-4">
-          <h3 class="h6">Redes sociales</h3>
-          <ul class="list-unstyled mb-0">
-            <li><a href="#" class="footer-link">Instagram</a></li>
-            <li><a href="#" class="footer-link">Facebook</a></li>
-            <li><a href="#" class="footer-link">TikTok</a></li>
+          <h3 class="h6 neon-text">Redes sociales</h3>
+          <ul class="list-inline mb-0 social-list">
+            <li class="list-inline-item"><span class="social-icon">📸</span><a href="#" class="footer-link">Instagram</a></li>
+            <li class="list-inline-item"><span class="social-icon">📘</span><a href="#" class="footer-link">Facebook</a></li>
+            <li class="list-inline-item"><span class="social-icon">🐦</span><a href="#" class="footer-link">Twitter</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-4">
-          <h3 class="h6">Contacto</h3>
+          <h3 class="h6 neon-text">Contacto</h3>
           <p class="mb-0">hola@pokecartas.com</p>
           <p class="mb-0">+54 11 1234 5678</p>
         </div>
