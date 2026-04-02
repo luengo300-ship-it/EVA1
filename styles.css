@@ -120,9 +120,10 @@ a:hover {
 .card-body p {
   color: #64748b;
 }
+/* se cambia manualmente el color de la seccion del footer */
 
 .footer {
-  background: #121212;
+  background: #94f405;
 }
 
 .neon-text {
@@ -169,7 +170,7 @@ a:hover {
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.8 rem;
   }
 }
 
