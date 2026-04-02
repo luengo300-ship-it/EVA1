@@ -80,7 +80,7 @@ a:hover {
 
 .img-placeholder {
   width: 100%;
-  height: 200px;
+  height: 220px;
   background: linear-gradient(45deg, #3b4cca, #ff0000);
   display: flex;
   align-items: center;
@@ -90,6 +90,26 @@ a:hover {
   font-weight: 700;
   text-align: center;
   padding: 1rem;
+}
+
+.carousel-card {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.carousel-card .img-placeholder {
+  height: 280px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(59, 76, 202, 0.35);
+}
+
+.carousel-indicators .active {
+  background-color: #3b4cca;
 }
 
 .card-title {
