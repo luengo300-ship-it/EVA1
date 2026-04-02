@@ -116,6 +116,13 @@ a:hover {
   color: #0f172a;
 }
 
+main section,
+.card-body,
+.footer,
+footer p {
+  text-align: center;
+}
+
 .text-secondary,
 .card-body p {
   color: #64748b;
